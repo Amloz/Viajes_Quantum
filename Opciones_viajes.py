@@ -33,9 +33,8 @@ def seleccionar_destino():
         print(f"Precio del viaje desde Bogotá a {destino_seleccionado} : ${precioBG} COP")
         print(f"Precio del viaje desde Medellin a {destino_seleccionado} : ${precioMD} COP")
         print(f"Precio del viaje desde Cali a {destino_seleccionado} : ${precioCA} COP")
+
+        return destino_seleccionado
     else:
         print("Por favor, seleccione uno de las opciones que se muestran arriba.")
-        
-
-seleccionar_destino()
-
+    

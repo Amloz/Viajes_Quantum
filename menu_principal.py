@@ -1,3 +1,5 @@
+from Opciones_viajes import *
+from modulo_ventas import procesar_venta, opciones_venta
 # Agencia de viajes Quantum
 destinos = ['a', 'b', 'c'] #adjuntar destinos
 
@@ -13,16 +15,16 @@ def entrar_menu_principal():
         
         print("*      Menú Principal          *")
        
-        print("1. Gestionar destinos")
+        print("1. Gestionar ventas")
         print("2. Buscar destino")
         print("3. Quiénes somos nosotros")
         print("4. Regresar")
       
         opcion = input("Seleccione una opción (1-4): ")
         if opcion == '1':
-            gestionar_destinos()
+            opciones_venta()
         elif opcion == '2':
-            buscar_destino()
+            seleccionar_destino()
         elif opcion == '3':
             quienes_somos()
         elif opcion == '4':
